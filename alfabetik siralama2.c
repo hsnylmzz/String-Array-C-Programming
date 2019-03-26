@@ -12,9 +12,9 @@ void sortalphabet(char *s)
   char temp;
   for(i=0;s[i]!='\0';i++)
   {
-    for(j=0;s[j]!='\0';j++)   // Bu kodda for içine j=i+1 değilde j=0 konulursa Z den A ya kadar sıralar.
+    for(j=0;s[j]!='\0';j++)   // Bu kodda for içine j=i+1 değilde j=0 konulursa Z den A'ya kadar sıralar.
     {
-      if(s[i]>s[j])
+      if(s[i]>s[j])          // j=0 olup s[i] < s[j] olarak değiştirilse A dan Z'ye kadar sıralanır.
       {
         temp=s[j];
         s[j]=s[i];
